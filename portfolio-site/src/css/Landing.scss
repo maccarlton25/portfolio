@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.landingWrapper {
+  background-color: #242424;
+  height: 100vh;
+  display: grid;
+  grid-template: 100% / 3fr repeat(54, 1fr) 3fr;
+  overflow: hidden;
+}
+
+.cell {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+@for $i from 0 to 56 {
+  @if $i <= 12 {
+    .cell:nth-child(#{$i + 1}):hover ~ .content {
+      --partialString: "#{str-slice("Hello, World my name is Mac Carlton ", 1, $i + 1)}";
+      --size: 32px;
+      --color: #fff;
+    }
+  } @else if $i == 13 {
+    .cell:nth-child(#{$i + 1}):hover ~ .content {
+      --partialString: "Hello, Worl";
+      --size: 32px;
+      --color: #fff;
+    }
+  } @else if $i == 14 {
+    .cell:nth-child(#{$i + 1}):hover ~ .content {
+      --partialString: "Hello, Wor";
+      --size: 32px;
+      --color: #fff;
+    }
+  }  @else if $i == 15 {
+    .cell:nth-child(#{$i + 1}):hover ~ .content {
+      --partialString: "Hello, Wo";
+      --size: 32px;
+      --color: #fff;
+    }
+  }  @else if $i == 16 {
+    .cell:nth-child(#{$i + 1}):hover ~ .content {
+      --partialString: "Hello, W";
+      --size: 32px;
+      --color: #fff;
+    }
+  }  @else if $i == 17 {
+    .cell:nth-child(#{$i + 1}):hover ~ .content {
+      --partialString: "Hello, ";
+      --size: 32px;
+      --color: #fff;
+    }
+  }  @else if $i == 19 {
+    .cell:nth-child(#{$i + 1}):hover ~ .content {
+      --partialString: "Hello,";
+      --size: 32px;
+      --color: #fff;
+    }
+  }@else if $i == 18 {
+    .cell:nth-child(#{$i + 1}):hover ~ .content {
+      --partialString: "Hello,";
+      --size: 32px;
+      --color: #fff;
+    }
+  } @else {
+    .cell:nth-child(#{$i + 1}):hover ~ .content {
+      --partialString: "#{str-slice("Hello, my name is Mac Carlton ", 1, $i - 12)}";
+      --size: 32px;
+      --color: #fff;
+    }
+  }
+}
+
+.content {
+  --partialString: "Hover across the screen to begin";
+  --color: #7d7d7d;
+  --size: 16px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+}
+
+.text:after {
+  content: var(--partialString);
+  font-family: "Roboto Mono", monospace;
+  font-size: var(--size);
+  color: var(--color);
+}
+.homeButton {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  font-family: "Roboto Mono", monospace;
+  color: #ededed;
+  z-index: 3;
+}
+
+.goingHome {
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+  color: #ededed;
+  border: 1px solid #ededed;
+  padding: 8px;
+  border-radius: 15px;
+}
+
+.goingHome:hover {
+  font-family: "Roboto Mono", monospace;
+  color: #242424;
+  background-color: #ededed;
+  
+}
