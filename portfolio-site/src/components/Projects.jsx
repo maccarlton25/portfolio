@@ -12,9 +12,9 @@ const Projects = () => {
             <div className="row">
                 <div className="col-lg-4 col-md-12">
                     <div className="card dark light-border margin-please">
-                        <img class="card-img-top" src="/aux.png" />
+                        <img className="card-img-top" src="/aux.png" />
                         <div className="card-body">
-                            <h5 className="card-title"> Aux, Inc. </h5>
+                            <h5 className="card-title "> Aux, Inc. </h5>
                             <h6 className="card-subtitle mb-2 text-muted small">Startup, AI &amp; Music | Spring 2021</h6>
                             <p className="card-text">
                                 Aux needed a website for an upcoming potential investor meeting. I worked with another developer and a graphic designer to get a  React website together within a month.
@@ -26,7 +26,7 @@ const Projects = () => {
                 </div>
                 <div className="col-lg-4 col-md-12">
                     <div className="card dark light-border margin-please">
-                        <img class="card-img-top" src="/courseplanner.png" />
+                        <img className="card-img-top" src="/courseplanner.png" />
                         <div className="card-body">
                             <h5 className="card-title"> Course Planner </h5>
                             <h6 className="card-subtitle mb-2 text-muted small">Final Project COMP-426 | Fall 2020</h6>
@@ -40,7 +40,7 @@ const Projects = () => {
                 </div>
                 <div className="col-lg-4 col-md-12">
                     <div className="card dark light-border margin-please">
-                        <img class="card-img-top" src="/joshactually.png" />
+                        <img className="card-img-top" src="/joshactually.png" />
                         <div className="card-body">
                             <h5 className="card-title"> Josh Neuman </h5>
                             <h6 className="card-subtitle mb-2 text-muted small">Entrepreneur, filmaker | Winter 2018 </h6>
@@ -55,7 +55,7 @@ const Projects = () => {
             <div className="row">
                 <div className="col-lg-4 col-md-12">
                     <div className="card dark light-border margin-please">
-                        <img class="card-img-top" src="https://cdn.dribbble.com/users/2670006/screenshots/6217560/maintenance-page-final.png?compress=1&resize=400x300" />
+                        <img className="card-img-top" src="https://cdn.dribbble.com/users/2670006/screenshots/6217560/maintenance-page-final.png?compress=1&resize=400x300" />
                         <div className="card-body">
                             <h5 className="card-title"> Headless CMS </h5>
                             <h6 className="card-subtitle mb-2 text-muted small">Web Dev Carolina | Fall 2020</h6>
@@ -68,7 +68,7 @@ const Projects = () => {
                 </div>
                 <div className="col-lg-4 col-md-12">
                     <div className="card dark light-border margin-please">
-                        <img class="card-img-top" src="/joshneuman.png" />
+                        <img className="card-img-top" src="/joshneuman.png" />
                         <div className="card-body">
                             <h5 className="card-title"> Event Registration Sites </h5>
                             <h6 className="card-subtitle mb-2 text-muted small">Client work | Summer 2020</h6>
@@ -82,7 +82,7 @@ const Projects = () => {
                 </div>
                 <div className="col-lg-4 col-md-12">
                     <div className="card dark light-border margin-please">
-                        <img class="card-img-top" src="/education.png" />
+                        <img className="card-img-top" src="/education.png" />
                         <div className="card-body">
                             <h5 className="card-title"> Web Dev Education </h5>
                             <h6 className="card-subtitle mb-2 text-muted small">Web Dev Carolina | Spring 2020</h6>

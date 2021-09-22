@@ -41,3 +41,9 @@
 .green-grad{
     background: linear-gradient(to right, rgb(6, 55, 46), rgb(189, 252, 240));
 }
+@media only screen and (max-width: 768px) {
+    p {
+      font-size: .75em;
+    }
+  }
+  
