@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from '../assets/logo.svg';
 import '../css/Landing.scss'
+import NavbarContainer from './NavbarContainer.jsx';
+import {Route, Switch, Link} from 'react-router-dom';
 
 function Landing() {
 
@@ -66,9 +68,12 @@ function Landing() {
             <div className="content">
                 <div className="text"></div>
             </div>
-            <div className="homeButton">
-            <a className="goingHome" href="https://www.w3schools.com">Lets get started!</a>
-            </div>
+            {/* <div className="homeButton">
+            <Link className="goingHome" to="/home">Lets get started!</Link>
+            </div> */}
+            <Switch>
+                <Route exact path="/home" component={NavbarContainer}/>
+            </Switch>
         </div>
     );
 }

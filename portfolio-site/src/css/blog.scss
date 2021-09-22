@@ -1,0 +1,43 @@
+
+.bg-style {
+    background-size: cover;
+    border-top-right-radius: 33px;
+    border-bottom-right-radius: 33px;
+    margin-bottom: 5px;
+    min-height: 30vh;
+    padding: 5%;
+}
+.bg-wrapper{
+    height: inherit;
+    margin-bottom: 5px;
+}
+.col-md-4 {
+    overflow:hidden;
+}
+
+.bg-blog-l {
+    border-top-left-radius: 33px;
+    border-bottom-left-radius: 33px;
+    margin-bottom: 5px;
+    min-height: 30vh;
+    max-height: 100;
+    padding: 5%;
+}
+
+.article {
+    width: 80%;
+    margin-left: 0px;
+}
+.hidden {
+    display: none;
+}
+
+.red-grad {
+    background: linear-gradient(to right, rgb(60, 0, 33), rgb(252, 212, 189));
+}
+.blue-grad{
+    background: linear-gradient(to right, rgb(11, 33, 51), rgb(194, 222, 246));
+}
+.green-grad{
+    background: linear-gradient(to right, rgb(6, 55, 46), rgb(189, 252, 240));
+}
